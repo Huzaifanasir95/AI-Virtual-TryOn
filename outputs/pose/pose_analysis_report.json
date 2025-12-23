@@ -1,0 +1,76 @@
+{
+  "analysis": {
+    "total_keypoints": 25,
+    "samples_analyzed": 500,
+    "samples_with_pose": 500,
+    "detection_rate": 1.0
+  },
+  "keypoint_statistics": {
+    "0": 500,
+    "1": 500,
+    "2": 500,
+    "3": 493,
+    "4": 459,
+    "5": 500,
+    "6": 490,
+    "7": 463,
+    "8": 497,
+    "9": 497,
+    "10": 76,
+    "11": 2,
+    "12": 497,
+    "13": 96,
+    "14": 1,
+    "15": 500,
+    "16": 500,
+    "17": 468,
+    "18": 458,
+    "19": 1,
+    "20": 1,
+    "21": 1,
+    "22": 1,
+    "23": 1,
+    "24": 2
+  },
+  "quality_assessment": {
+    "good": 200,
+    "acceptable": 0,
+    "poor": 0,
+    "face_complete": 200,
+    "upper_body_complete": 200,
+    "lower_body_complete": 39
+  },
+  "critical_keypoints": {
+    "face": [
+      0,
+      15,
+      16,
+      17,
+      18
+    ],
+    "upper_body": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "torso": [
+      1,
+      8,
+      9,
+      12
+    ],
+    "lower_body": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "skeleton_connections": 24
+}
