@@ -1,0 +1,90 @@
+{
+  "dataset": {
+    "train_samples": 10482,
+    "val_samples": 1165,
+    "test_samples": 2032,
+    "total_samples": 13679
+  },
+  "parsing_classes": {
+    "num_classes": 20,
+    "class_names": {
+      "0": "Background",
+      "1": "Hat",
+      "2": "Hair",
+      "3": "Glove",
+      "4": "Sunglasses",
+      "5": "Upper-clothes",
+      "6": "Dress",
+      "7": "Coat",
+      "8": "Socks",
+      "9": "Pants",
+      "10": "Jumpsuits",
+      "11": "Scarf",
+      "12": "Skirt",
+      "13": "Face",
+      "14": "Left-arm",
+      "15": "Right-arm",
+      "16": "Left-leg",
+      "17": "Right-leg",
+      "18": "Left-shoe",
+      "19": "Right-shoe"
+    },
+    "garment_categories": {
+      "upper_body": [
+        "Upper-clothes",
+        "Coat"
+      ],
+      "lower_body": [
+        "Pants",
+        "Skirt"
+      ],
+      "full_body": [
+        "Dress",
+        "Jumpsuits"
+      ],
+      "accessories": [
+        "Hat",
+        "Glove",
+        "Sunglasses",
+        "Socks",
+        "Scarf",
+        "Left-shoe",
+        "Right-shoe"
+      ]
+    }
+  },
+  "distribution_analysis": {
+    "class_occurrences": {
+      "0": 500,
+      "2": 500,
+      "5": 494,
+      "10": 499,
+      "12": 74,
+      "13": 500,
+      "14": 473,
+      "15": 475,
+      "9": 428,
+      "1": 1,
+      "6": 18,
+      "16": 32,
+      "17": 33,
+      "7": 3,
+      "18": 1,
+      "19": 1
+    },
+    "sample_size": 500
+  },
+  "quality_assessment": {
+    "missing_face": 0,
+    "missing_arms": 2,
+    "missing_legs": 188,
+    "missing_upper_clothes": 2,
+    "very_small_regions": 16,
+    "total_samples": 200
+  },
+  "generated_files": {
+    "parsing_visualization": "d:\\Projects\\AI-Virtual-TryOn\\outputs\\parsing\\parsing_visualization.png",
+    "garment_extraction": "d:\\Projects\\AI-Virtual-TryOn\\outputs\\parsing\\garment_extraction.png",
+    "processor_demo": "d:\\Projects\\AI-Virtual-TryOn\\outputs\\parsing\\parsing_processor_demo.png"
+  }
+}
