@@ -1,0 +1,33 @@
+{
+  "loss_weights": {
+    "lambda_gan": 1.0,
+    "lambda_perceptual": 10.0,
+    "lambda_l1": 10.0,
+    "lambda_fm": 10.0
+  },
+  "gan_loss": {
+    "type": "lsgan",
+    "target_real": 1.0,
+    "target_fake": 0.0
+  },
+  "perceptual_loss": {
+    "network": "VGG19",
+    "layers": [
+      "relu1_1",
+      "relu2_1",
+      "relu3_1",
+      "relu4_1",
+      "relu5_1"
+    ],
+    "pretrained": "ImageNet"
+  },
+  "reconstruction_loss": {
+    "type": "L1",
+    "pixel_wise": true
+  },
+  "feature_matching": {
+    "enabled": true,
+    "discriminator_features": true
+  },
+  "device": "cuda"
+}
