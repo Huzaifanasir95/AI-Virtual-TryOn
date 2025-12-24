@@ -6,12 +6,12 @@
     "total_samples": 13679
   },
   "dataloader": {
-    "batch_size": 4,
+    "batch_size": 2,
     "num_workers": 0,
     "pin_memory": true,
-    "train_batches": 2620,
-    "val_batches": 292,
-    "test_batches": 508
+    "train_batches": 5241,
+    "val_batches": 583,
+    "test_batches": 1016
   },
   "data_format": {
     "image_size": [
@@ -49,10 +49,10 @@
     "color_jitter_prob": 0.3
   },
   "performance": {
-    "mean_batch_time_ms": 306.6341519355774,
-    "throughput_samples_per_sec": 13.044861359214755,
-    "estimated_epoch_time_min": 13.38969130118688,
+    "mean_batch_time_ms": 151.9452452659607,
+    "throughput_samples_per_sec": 13.162636293746843,
+    "estimated_epoch_time_min": 13.272417173981667,
     "single_sample_memory_mb": 144.0,
-    "batch_memory_mb": 576.0
+    "batch_memory_mb": 288.0
   }
 }
