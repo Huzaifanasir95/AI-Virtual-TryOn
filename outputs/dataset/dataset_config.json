@@ -49,9 +49,9 @@
     "color_jitter_prob": 0.3
   },
   "performance": {
-    "mean_batch_time_ms": 341.78909063339233,
-    "throughput_samples_per_sec": 11.703123679539715,
-    "estimated_epoch_time_min": 14.924790290991467,
+    "mean_batch_time_ms": 306.6341519355774,
+    "throughput_samples_per_sec": 13.044861359214755,
+    "estimated_epoch_time_min": 13.38969130118688,
     "single_sample_memory_mb": 144.0,
     "batch_memory_mb": 576.0
   }
