@@ -1,0 +1,46 @@
+{
+  "image_size": [
+    1024,
+    768
+  ],
+  "input_channels": {
+    "cloth_agnostic_rgb": 3,
+    "pose_heatmaps": 18,
+    "parsing_onehot": 20,
+    "total": 41
+  },
+  "garment_types": [
+    "upper_body",
+    "lower_body",
+    "full_body",
+    "accessories"
+  ],
+  "body_parts": [
+    "face",
+    "hair",
+    "arms",
+    "legs",
+    "background"
+  ],
+  "fill_color": [
+    128,
+    128,
+    128
+  ],
+  "pose_sigma": 3.0,
+  "pose_threshold": 0.1,
+  "normalization": {
+    "rgb_mean": 0.5,
+    "rgb_std": 0.5,
+    "range": [
+      -1,
+      1
+    ]
+  },
+  "quality_stats": {
+    "samples_assessed": 200,
+    "good_percentage": 98.0,
+    "mean_removed": 17.87260627746582,
+    "std_removed": 7.185726219933694
+  }
+}
