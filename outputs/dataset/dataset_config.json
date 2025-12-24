@@ -1,0 +1,58 @@
+{
+  "dataset": {
+    "train_samples": 10482,
+    "val_samples": 1165,
+    "test_samples": 2032,
+    "total_samples": 13679
+  },
+  "dataloader": {
+    "batch_size": 4,
+    "num_workers": 0,
+    "pin_memory": true,
+    "train_batches": 2620,
+    "val_batches": 292,
+    "test_batches": 508
+  },
+  "data_format": {
+    "image_size": [
+      1024,
+      768
+    ],
+    "channels": {
+      "person_image": 3,
+      "cloth_image": 3,
+      "cloth_agnostic": 3,
+      "pose_map": 18,
+      "parsing_onehot": 20,
+      "ca_mask": 1,
+      "total_input": 41
+    },
+    "normalization": {
+      "mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "std": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "range": [
+        -1,
+        1
+      ]
+    }
+  },
+  "augmentation": {
+    "horizontal_flip_prob": 0.5,
+    "color_jitter_prob": 0.3
+  },
+  "performance": {
+    "mean_batch_time_ms": 341.78909063339233,
+    "throughput_samples_per_sec": 11.703123679539715,
+    "estimated_epoch_time_min": 14.924790290991467,
+    "single_sample_memory_mb": 144.0,
+    "batch_memory_mb": 576.0
+  }
+}
