@@ -1,0 +1,36 @@
+{
+  "generator": {
+    "type": "U-Net",
+    "input_channels": 41,
+    "output_channels": 3,
+    "base_channels": 64,
+    "n_downsampling": 4,
+    "n_blocks": 9,
+    "use_dropout": true,
+    "use_attention": true,
+    "total_parameters": 63847812,
+    "trainable_parameters": 63847812,
+    "memory_mb": 243.56007385253906
+  },
+  "discriminator": {
+    "type": "PatchGAN",
+    "input_channels": 6,
+    "base_channels": 64,
+    "n_layers": 3,
+    "use_spectral_norm": true,
+    "patch_size": "70x70",
+    "output_patches": "126x94",
+    "total_parameters": 2766913,
+    "trainable_parameters": 2766913,
+    "memory_mb": 10.554935455322266
+  },
+  "total": {
+    "combined_parameters": 66614725,
+    "combined_memory_mb": 254.11500930786133
+  },
+  "image_size": [
+    1024,
+    768
+  ],
+  "device": "cuda"
+}
