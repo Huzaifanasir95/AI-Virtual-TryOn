@@ -6,17 +6,17 @@
     "total_samples": 13679
   },
   "dataloader": {
-    "batch_size": 2,
+    "batch_size": 1,
     "num_workers": 0,
     "pin_memory": true,
-    "train_batches": 5241,
-    "val_batches": 583,
-    "test_batches": 1016
+    "train_batches": 10482,
+    "val_batches": 1165,
+    "test_batches": 2032
   },
   "data_format": {
     "image_size": [
-      1024,
-      768
+      256,
+      192
     ],
     "channels": {
       "person_image": 3,
@@ -49,10 +49,10 @@
     "color_jitter_prob": 0.3
   },
   "performance": {
-    "mean_batch_time_ms": 153.84628772735596,
-    "throughput_samples_per_sec": 12.999988687048267,
-    "estimated_epoch_time_min": 13.438473232984542,
-    "single_sample_memory_mb": 144.0,
-    "batch_memory_mb": 288.0
+    "mean_batch_time_ms": 47.682857513427734,
+    "throughput_samples_per_sec": 20.971897494154895,
+    "estimated_epoch_time_min": 8.330195207595825,
+    "single_sample_memory_mb": 9.0,
+    "batch_memory_mb": 9.0
   }
 }

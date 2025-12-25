@@ -29,5 +29,5 @@
     "enabled": true,
     "discriminator_features": true
   },
-  "device": "cuda"
+  "device": "cpu"
 }
