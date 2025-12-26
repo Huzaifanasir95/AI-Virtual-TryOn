@@ -3,6 +3,8 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18058537.svg)](https://doi.org/10.5281/zenodo.18058537)
+[![Paper](https://img.shields.io/badge/paper-Zenodo-blue.svg)](https://doi.org/10.5281/zenodo.18058537)
 
 A comprehensive deep learning-based virtual try-on system leveraging multi-modal feature fusion and Generative Adversarial Networks (GANs) to generate photorealistic garment transfer images. This implementation combines cloth-agnostic person representation, pose estimation, and human parsing for identity-preserving virtual try-on.
 
@@ -538,11 +540,19 @@ This implementation is accompanied by a comprehensive research paper written in 
 
 **Title**: *Deep Learning-Based Virtual Try-On System Using Multi-Modal Feature Fusion and Generative Adversarial Networks*
 
+**Author**: Huzaifa Nasir
+
 **Abstract**: Virtual try-on technology has emerged as a transformative solution for online fashion retail. This paper presents a comprehensive deep learning-based virtual try-on system that leverages multi-modal feature fusion and GANs to generate photorealistic try-on images. Our approach combines cloth-agnostic person representation, pose estimation, and human parsing to create a 41-channel input representation that preserves person identity while transferring target garments.
 
-**Paper Location**: `Report/main.tex`
+**Published**: Zenodo, December 2025
 
-**Compilation**:
+**DOI**: [10.5281/zenodo.18058537](https://doi.org/10.5281/zenodo.18058537)
+
+**Download Paper**: 
+- [PDF on Zenodo](https://doi.org/10.5281/zenodo.18058537)
+- [LaTeX Source](Report/main.tex)
+
+**Compilation** (from source):
 ```bash
 cd Report
 pdflatex main.tex
@@ -612,11 +622,13 @@ pip install -r requirements.txt
 If you use this code or find it helpful in your research, please cite:
 
 ```bibtex
-@software{ai_virtual_tryon_2025,
-  title={AI Virtual Try-On System: Multi-Modal Feature Fusion with GANs},
-  author={Your Name},
+@article{nasir2025virtual,
+  title={Deep Learning-Based Virtual Try-On System Using Multi-Modal Feature Fusion and Generative Adversarial Networks},
+  author={Nasir, Huzaifa},
   year={2025},
-  url={https://github.com/huzaifanasir95/AI-Virtual-TryOn}
+  publisher={Zenodo},
+  doi={10.5281/zenodo.18058537},
+  url={https://doi.org/10.5281/zenodo.18058537}
 }
 ```
 
