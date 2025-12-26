@@ -739,23 +739,9 @@ For questions, issues, or collaboration opportunities:
 
 ---
 
-## 📊 Performance Benchmarks
-
-| Configuration | Device | Resolution | Batch | Inference Time | Training Time/Epoch |
-|--------------|--------|------------|-------|----------------|---------------------|
-| Minimum | CPU | 256×192 | 1 | 250ms | 8 min |
-| Recommended | RTX 2070 | 512×384 | 4 | 40ms | 2-3 min |
-| Optimal | RTX 3090 | 1024×768 | 8 | 80ms | 1-2 min |
-| Production | A100 | 1024×768 | 16 | 50ms | <1 min |
-
-*Benchmarks are approximate and may vary based on system configuration*
-
----
 
 <div align="center">
 
 **⭐ Star this repository if you find it helpful!**
-
-**Built with ❤️ using PyTorch and Python**
 
 </div>
