@@ -360,7 +360,7 @@ jupyter notebook notebooks/
 
 ### Generator: U-Net with Self-Attention
 
-![Generator Architecture](outputs/model_architecture/model_architecture_config.json)
+![Generator Architecture](outputs/model_architecture/model_architecture.png)
 
 **Architecture Details**:
 
