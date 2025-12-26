@@ -616,7 +616,7 @@ If you use this code or find it helpful in your research, please cite:
   title={AI Virtual Try-On System: Multi-Modal Feature Fusion with GANs},
   author={Your Name},
   year={2025},
-  url={https://github.com/yourusername/AI-Virtual-TryOn}
+  url={https://github.com/huzaifanasir95/AI-Virtual-TryOn}
 }
 ```
 
