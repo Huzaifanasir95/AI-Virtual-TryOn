@@ -162,7 +162,7 @@ data/zalando-hd-resized/
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/yourusername/AI-Virtual-TryOn.git
+git clone https://github.com/huzaifanasir95/AI-Virtual-TryOn.git
 cd AI-Virtual-TryOn
 ```
 
