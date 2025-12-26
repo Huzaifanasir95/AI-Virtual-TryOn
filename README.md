@@ -100,7 +100,7 @@ graph TD
 - **Features**: Spectral normalization for training stability
 
 <p align="center">
-  <img src="outputs/model_architecture/model_architecture_config.json" alt="Model Architecture" width="80%">
+  <img src="outputs/model_architecture/model_architectur.png" alt="Model Architecture" width="80%">
 </p>
 
 ---
@@ -406,7 +406,7 @@ jupyter notebook notebooks/
 ### Loss Functions
 
 <p align="center">
-  <img src="outputs/loss_functions/loss_config.json" alt="Loss Components Configuration" width="70%">
+  <img src="outputs/loss_functions/loss_comparsion.png" alt="Loss Components Configuration" width="70%">
 </p>
 
 **Multi-Component Loss**:
