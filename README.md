@@ -7,7 +7,7 @@
 A comprehensive deep learning-based virtual try-on system leveraging multi-modal feature fusion and Generative Adversarial Networks (GANs) to generate photorealistic garment transfer images. This implementation combines cloth-agnostic person representation, pose estimation, and human parsing for identity-preserving virtual try-on.
 
 <p align="center">
-  <img src="outputs/visualizations/comparison_grid.png" alt="Virtual Try-On Results" width="100%">
+  <img src="outputs/training/results/comparison_grid.png" alt="Virtual Try-On Results" width="100%">
 </p>
 <p align="center"><em>Sample results showing person input, target garment, generated try-on, and ground truth</em></p>
 
@@ -466,7 +466,7 @@ architecture: Full (n_downsampling=4, n_blocks=9)
 ### Training Curves
 
 <p align="center">
-  <img src="outputs/visualizations/training_curves.png" alt="Training Dynamics" width="100%">
+  <img src="outputs/training/results/training_curves.png" alt="Training Dynamics" width="100%">
 </p>
 <p align="center"><em>Generator and discriminator loss evolution over epochs</em></p>
 
@@ -498,7 +498,7 @@ architecture: Full (n_downsampling=4, n_blocks=9)
 ### Qualitative Results
 
 <p align="center">
-  <img src="outputs/visualizations/comparison_grid.png" alt="Comparison Grid" width="100%">
+  <img src="outputs/training/results/comparison_grid.png" alt="Comparison Grid" width="100%">
 </p>
 <p align="center"><em>Qualitative comparison: Input person, target garment, generated try-on, and ground truth</em></p>
 
@@ -512,7 +512,7 @@ architecture: Full (n_downsampling=4, n_blocks=9)
 ### Loss Component Analysis
 
 <p align="center">
-  <img src="outputs/visualizations/loss_comparison.png" alt="Loss Components" width="80%">
+  <img src="outputs/loss_functions/loss_comparison.png" alt="Loss Components" width="80%">
 </p>
 <p align="center"><em>Contribution of different loss components to total generator loss</em></p>
 
@@ -526,13 +526,13 @@ architecture: Full (n_downsampling=4, n_blocks=9)
 
 #### Human Parsing
 <p align="center">
-  <img src="outputs/visualizations/garment_extraction.png" alt="Garment Extraction" width="90%">
+  <img src="outputs/parsing/garment_extraction.png" alt="Garment Extraction" width="90%">
 </p>
 <p align="center"><em>Garment region extraction using LIP parsing masks (20 classes)</em></p>
 
 #### Pose Estimation
 <p align="center">
-  <img src="outputs/visualizations/pose_detailed_analysis.png" alt="Pose Analysis" width="90%">
+  <img src="outputs/pose/pose_detailed_analysis.png" alt="Pose Analysis" width="90%">
 </p>
 <p align="center"><em>OpenPose Body25 keypoints and Gaussian heatmap generation</em></p>
 

@@ -1,0 +1,70 @@
+dataset:
+  name: VITON-HD (Zalando HD Resized)
+  root: d:\Projects\AI-Virtual-TryOn\data\zalando-hd-resized
+  train_samples: 10482
+  val_samples: 1165
+  test_samples: 2032
+  total_samples: 13679
+preprocessing:
+  image_size: !!python/tuple
+  - 512
+  - 384
+  normalization:
+    mean:
+    - 0.5
+    - 0.5
+    - 0.5
+    std:
+    - 0.5
+    - 0.5
+    - 0.5
+  augmentation: true
+  augmentation_techniques:
+  - ColorJitter
+  - GaussianBlur
+  - MedianBlur
+dataloader:
+  batch_size: 8
+  num_workers: 4
+  shuffle: true
+  pin_memory: true
+pose:
+  num_keypoints: 25
+  format: OpenPose
+  keypoint_format: '[x, y, confidence]'
+segmentation:
+  num_classes: 12
+  classes:
+  - 0
+  - 9
+  - 28
+  - 38
+  - 55
+  - 59
+  - 75
+  - 125
+  - 139
+  - 178
+  - 193
+  - 209
+  class_names:
+    0: Background
+    1: Hat
+    2: Hair
+    3: Glove
+    4: Sunglasses
+    5: Upper-clothes
+    6: Dress
+    7: Coat
+    8: Socks
+    9: Pants
+    10: Jumpsuits
+    11: Scarf
+    12: Skirt
+    13: Face
+    14: Left-arm
+    15: Right-arm
+    16: Left-leg
+    17: Right-leg
+    18: Left-shoe
+    19: Right-shoe

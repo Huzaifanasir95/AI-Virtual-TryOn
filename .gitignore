@@ -36,11 +36,15 @@ data/processed/*
 data/train/*
 data/test/*
 data/validation/*
+data/zalando-hd-resized/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !data/train/.gitkeep
 !data/test/.gitkeep
 !data/validation/.gitkeep
+!data/README.md
+!data/processed/*.yaml
+!data/processed/*.csv
 
 # Models
 models/checkpoints/*
@@ -48,8 +52,38 @@ models/pretrained/*
 !models/checkpoints/.gitkeep
 !models/pretrained/.gitkeep
 
-# Outputs
+# Outputs (ignore large outputs but keep visualization images)
+outputs/training/checkpoints/*
+outputs/training/logs/*
+outputs/training/samples/*
+outputs/results/*
+!outputs/training/checkpoints/.gitkeep
+!outputs/training/logs/.gitkeep
+!outputs/training/samples/.gitkeep
+!outputs/results/.gitkeep
 
+# Keep specific images and configs for README and documentation
+!outputs/training/results/*.png
+!outputs/training/results/*.jpg
+!outputs/training/*.png
+!outputs/parsing/*.png
+!outputs/parsing/*.jpg
+!outputs/pose/*.png
+!outputs/pose/*.jpg
+!outputs/loss_functions/*.png
+!outputs/loss_functions/*.jpg
+!outputs/cloth_agnostic/*.png
+!outputs/cloth_agnostic/*.jpg
+!outputs/comparisons/*.png
+!outputs/comparisons/*.jpg
+!outputs/model_architecture/*.json
+!outputs/loss_functions/*.json
+!outputs/cloth_agnostic/*.json
+!outputs/dataset/*.json
+!outputs/parsing/*.json
+!outputs/pose/*.json
+!outputs/metrics/*.json
+!outputs/metrics/*.csv
 
 # IDE
 .vscode/
@@ -88,5 +122,16 @@ temp/
 # Exceptions (keep small example files)
 !examples/*.jpg
 !examples/*.png
-/data
-/Report
+
+# Keep Report folder images for paper
+/Report/*.aux
+/Report/*.bbl
+/Report/*.blg
+/Report/*.log
+/Report/*.out
+/Report/*.toc
+/Report/*.pdf
+!Report/*.tex
+!Report/*.png
+!Report/*.jpg
+!Report/*.bib
