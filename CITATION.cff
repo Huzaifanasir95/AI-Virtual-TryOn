@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Nasir
+    given-names: Huzaifa
+    email: nasirhuzaifa95@gmail.com
+    affiliation: National University of Computer and Emerging Sciences
+title: "Deep Learning-Based Virtual Try-On System Using Multi-Modal Feature Fusion and Generative Adversarial Networks"
+version: 1.0.0
+doi: 10.5281/zenodo.18058537
+date-released: 2025-12-26
+url: "https://github.com/huzaifanasir95/AI-Virtual-TryOn"
+repository-code: "https://github.com/huzaifanasir95/AI-Virtual-TryOn"
+keywords:
+  - virtual-try-on
+  - generative-adversarial-networks
+  - deep-learning
+  - computer-vision
+  - multi-modal-fusion
+  - fashion-technology
+  - image-to-image-translation
+  - u-net
+  - patchgan
+  - pytorch
+  - viton-hd
+  - e-commerce-ai
+license: MIT
