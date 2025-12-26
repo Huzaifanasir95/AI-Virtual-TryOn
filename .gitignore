@@ -49,14 +49,7 @@ models/pretrained/*
 !models/pretrained/.gitkeep
 
 # Outputs
-outputs/results/*
-outputs/visualizations/*
-outputs/comparisons/*
-outputs/metrics/*
-!outputs/results/.gitkeep
-!outputs/visualizations/.gitkeep
-!outputs/comparisons/.gitkeep
-!outputs/metrics/.gitkeep
+
 
 # IDE
 .vscode/

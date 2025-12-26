@@ -1,0 +1,58 @@
+{
+  "dataset_name": "Zalando HD Resized (VITON-HD)",
+  "dataset_path": "d:\\Projects\\AI-Virtual-TryOn\\data\\zalando-hd-resized",
+  "exploration_date": "2025-12-23T18:10:48.349113",
+  "splits": {
+    "train": {
+      "image": {
+        "count": 11647,
+        "size_mb": 1474.703130722046
+      },
+      "cloth": {
+        "count": 11647,
+        "size_mb": 1227.71914768219
+      },
+      "image-parse-v3": {
+        "count": 11647,
+        "size_mb": 92.6274938583374
+      },
+      "openpose_img": {
+        "count": 11647,
+        "size_mb": 120.19018936157227
+      },
+      "openpose_json": {
+        "count": 11647,
+        "size_mb": 37.947994232177734
+      }
+    },
+    "test": {
+      "image": {
+        "count": 2032,
+        "size_mb": 257.0727787017822
+      },
+      "cloth": {
+        "count": 2032,
+        "size_mb": 212.82906341552734
+      },
+      "image-parse-v3": {
+        "count": 2032,
+        "size_mb": 16.138089179992676
+      },
+      "openpose_img": {
+        "count": 2032,
+        "size_mb": 20.96449565887451
+      },
+      "openpose_json": {
+        "count": 2032,
+        "size_mb": 6.627493858337402
+      }
+    }
+  },
+  "components_available": [
+    "Person images",
+    "Garment images",
+    "Segmentation masks",
+    "Pose visualizations",
+    "Pose JSON keypoints"
+  ]
+}

@@ -1,0 +1,11 @@
+Split,Component,File Count,Size (MB),Extensions
+Train,image,11647,1474.70,.jpg
+Train,cloth,11647,1227.72,.jpg
+Train,image-parse-v3,11647,92.63,.png
+Train,openpose_img,11647,120.19,.png
+Train,openpose_json,11647,37.95,.json
+Test,image,2032,257.07,.jpg
+Test,cloth,2032,212.83,.jpg
+Test,image-parse-v3,2032,16.14,.png
+Test,openpose_img,2032,20.96,.png
+Test,openpose_json,2032,6.63,.json
