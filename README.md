@@ -6,8 +6,10 @@
 
 A comprehensive deep learning-based virtual try-on system leveraging multi-modal feature fusion and Generative Adversarial Networks (GANs) to generate photorealistic garment transfer images. This implementation combines cloth-agnostic person representation, pose estimation, and human parsing for identity-preserving virtual try-on.
 
-![Virtual Try-On Results](outputs/visualizations/comparison_grid.png)
-*Sample results showing person input, target garment, generated try-on, and ground truth*
+<p align="center">
+  <img src="outputs/visualizations/comparison_grid.png" alt="Virtual Try-On Results" width="100%">
+</p>
+<p align="center"><em>Sample results showing person input, target garment, generated try-on, and ground truth</em></p>
 
 ---
 
@@ -61,16 +63,26 @@ A comprehensive deep learning-based virtual try-on system leveraging multi-modal
 
 ### System Pipeline
 
-```
-Input Image → Human Parsing → Cloth-Agnostic Representation
-                ↓
-          Pose Estimation → Gaussian Heatmaps
-                ↓
-          Multi-Modal Fusion (41 channels)
-                ↓
-          U-Net Generator → Generated Try-On Image
-                ↓
-          PatchGAN Discriminator → Real/Fake Classification
+```mermaid
+graph TD
+    A[Input Image] --> B[Human Parsing]
+    A --> C[Pose Estimation]
+    B --> D[Cloth-Agnostic Representation<br/>3 channels]
+    C --> E[Gaussian Heatmaps<br/>18 channels]
+    B --> F[LIP Parsing Masks<br/>20 channels]
+    D --> G[Multi-Modal Fusion<br/>41 channels total]
+    E --> G
+    F --> G
+    G --> H[U-Net Generator<br/>26.4M params]
+    H --> I[Generated Try-On Image<br/>3 channels RGB]
+    I --> J[PatchGAN Discriminator<br/>2.8M params]
+    J --> K{Real/Fake<br/>Classification}
+    
+    style A fill:#e1f5ff
+    style G fill:#fff4e1
+    style H fill:#e8f5e9
+    style J fill:#fce4ec
+    style I fill:#f3e5f5
 ```
 
 ### Network Architecture
@@ -87,7 +99,9 @@ Input Image → Human Parsing → Cloth-Agnostic Representation
 - **Output**: Patch-wise real/fake predictions (70×70 receptive field)
 - **Features**: Spectral normalization for training stability
 
-![Model Architecture](outputs/model_architecture/model_architecture_config.json)
+<p align="center">
+  <img src="outputs/model_architecture/model_architecture_config.json" alt="Model Architecture" width="80%">
+</p>
 
 ---
 
@@ -391,7 +405,9 @@ jupyter notebook notebooks/
 
 ### Loss Functions
 
-![Loss Components](outputs/loss_functions/loss_config.json)
+<p align="center">
+  <img src="outputs/loss_functions/loss_config.json" alt="Loss Components Configuration" width="70%">
+</p>
 
 **Multi-Component Loss**:
 
@@ -449,8 +465,10 @@ architecture: Full (n_downsampling=4, n_blocks=9)
 
 ### Training Curves
 
-![Training Dynamics](outputs/visualizations/training_curves.png)
-*Generator and discriminator loss evolution over epochs*
+<p align="center">
+  <img src="outputs/visualizations/training_curves.png" alt="Training Dynamics" width="100%">
+</p>
+<p align="center"><em>Generator and discriminator loss evolution over epochs</em></p>
 
 ### Hardware Requirements
 
@@ -479,8 +497,10 @@ architecture: Full (n_downsampling=4, n_blocks=9)
 
 ### Qualitative Results
 
-![Comparison Grid](outputs/visualizations/comparison_grid.png)
-*Qualitative comparison: Input person, target garment, generated try-on, and ground truth*
+<p align="center">
+  <img src="outputs/visualizations/comparison_grid.png" alt="Comparison Grid" width="100%">
+</p>
+<p align="center"><em>Qualitative comparison: Input person, target garment, generated try-on, and ground truth</em></p>
 
 **Observed Characteristics**:
 - ✅ **Identity Preservation**: Face, hair, and body features maintained
@@ -491,8 +511,10 @@ architecture: Full (n_downsampling=4, n_blocks=9)
 
 ### Loss Component Analysis
 
-![Loss Components](outputs/visualizations/loss_comparison.png)
-*Contribution of different loss components to total generator loss*
+<p align="center">
+  <img src="outputs/visualizations/loss_comparison.png" alt="Loss Components" width="80%">
+</p>
+<p align="center"><em>Contribution of different loss components to total generator loss</em></p>
 
 **Loss Breakdown** (Final Epoch):
 - Perceptual Loss: 57.9% (11.34)
@@ -503,12 +525,16 @@ architecture: Full (n_downsampling=4, n_blocks=9)
 ### Data Processing Examples
 
 #### Human Parsing
-![Garment Extraction](outputs/visualizations/garment_extraction.png)
-*Garment region extraction using LIP parsing masks (20 classes)*
+<p align="center">
+  <img src="outputs/visualizations/garment_extraction.png" alt="Garment Extraction" width="90%">
+</p>
+<p align="center"><em>Garment region extraction using LIP parsing masks (20 classes)</em></p>
 
 #### Pose Estimation
-![Pose Analysis](outputs/visualizations/pose_detailed_analysis.png)
-*OpenPose Body25 keypoints and Gaussian heatmap generation*
+<p align="center">
+  <img src="outputs/visualizations/pose_detailed_analysis.png" alt="Pose Analysis" width="90%">
+</p>
+<p align="center"><em>OpenPose Body25 keypoints and Gaussian heatmap generation</em></p>
 
 ---
 
@@ -650,7 +676,7 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 For questions, issues, or collaboration opportunities:
 
 - **GitHub Issues**: [Create an issue](https://github.com/yourusername/AI-Virtual-TryOn/issues)
-- **Email**: your.email@institution.edu
+- **Email**: nasirhuzaifa95@gmail.com
 
 ---
 
@@ -739,13 +765,3 @@ For questions, issues, or collaboration opportunities:
 **Built with ❤️ using PyTorch and Python**
 
 </div>
-- FID: <12.0
-- Inference Time: <3s per image
-
-## 📄 License
-
-MIT License
-
-## 👤 Author
-
-Huzaifa Nasir
