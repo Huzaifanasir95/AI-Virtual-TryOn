@@ -96,3 +96,4 @@ temp/
 !examples/*.jpg
 !examples/*.png
 /data
+/Report
